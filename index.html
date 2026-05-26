@@ -148,6 +148,7 @@
               display: flex;
               flex-direction: column;
               justify-content: space-between;
+            border-radius: 15px;
           }
 
           .card.is-visible {
@@ -159,6 +160,7 @@
               width: 100%;
               height: 200px; 
               object-fit: cover;
+              border-radius: 15px;
           }
 
           .card-content {
@@ -180,7 +182,8 @@
 
 .card-footer {
     position: relative; 
-    background-color: #f9f9f9;
+    background-color: #ffffff;
+    border-radius: 15px;
     
 }
 
@@ -211,6 +214,11 @@
 body.dark-theme {
     background-color: #121212; /* Темный фон всей страницы */
     color: #e0e0e0; /* Светлый цвет для основного текста */
+}
+
+body.dark-theme .card-footer button{
+   background: linear-gradient(45deg, #303f49, #35434d);
+    color: white;/* Светлый цвет для основного текста */
 }
 
 /* Шапка становится черной */
@@ -246,19 +254,28 @@ body.dark-theme .sidebar ul p {
 body.dark-theme .card-grid {
     background-color: #1e1e1e; /* Темно-серый фон области с машинами */
 }
+
+body.dark-theme .card {
+    background-color: #1e1e1e; /* Темно-серый фон области с машинами */
+}
+
+body.dark-theme .card-footer {
+    background-color: #1e1e1e; /* Темно-серый фон области с машинами */
+}
+        
 body.dark-theme .car-card {
     background-color: #2a2a2a; /* Серый фон карточки */
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.3), /* Более темная тень */
         inset 0 -1px 0 rgba(255,255,255,0.03);
 }
-body.dark-theme .car-title {
+body.dark-theme .card-title {
     color: #f5f5f5; /* Светлый заголовок машины */
 }
 body.dark-theme .car-price {
     color: #ffd700; /* Золотой цвет для цены */
 }
-body.dark-theme .car-text {
+body.dark-theme .card-text {
     color: #b0b0b0; /* Светло-серый текст характеристик */
 }
 
